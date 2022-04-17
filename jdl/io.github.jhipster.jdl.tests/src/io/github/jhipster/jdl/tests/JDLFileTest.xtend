@@ -233,7 +233,7 @@ class JDLFileTest {
 		resourceSet = resourceSetProvider.get
 	}
 
-	@Parameters
+	@Parameters(name = "test({index}): {0}")
 	def static Collection<File> getJdlFiles() {
 		val result = newArrayList
 		Files.walk(
